@@ -1,0 +1,19 @@
+.footer-body{
+    background-color: #1A1A1A;
+}
+.footerLogo {
+    width:170px;
+    height: 200px;
+    margin-top: 150px;
+
+}
+/* .rowmargin{
+    
+} */
+/* .line{
+    color: #2C2C2C;
+    
+} */
+hr {
+    border-top: 1px solid #2C2C2C;
+}

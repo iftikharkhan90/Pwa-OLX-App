@@ -1,0 +1,110 @@
+{
+  "name": "aldum",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^3.3.7",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "eslint": "^4.19.1",
+    "express": "^4.16.3",
+    "express-async-errors": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.2.0",
+    "google-maps-react": "^2.0.2",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.1.6",
+    "mongoose-mongodb-errors": "0.0.2",
+    "nexmo": "^2.3.2",
+    "nodemailer": "^4.6.7",
+    "nodemon": "^1.17.5",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-bootstrap-modal": "^4.1.1",
+    "react-dom": "^16.3.2",
+    "react-fontawesome": "^1.6.1",
+    "react-google-map": "^3.1.1",
+    "react-google-maps-loader": "^4.2.2",
+    "react-places-autocomplete": "^7.1.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-toastify": "^4.2.3"
+  },
+  "proxy": {
+    "/user/registerForm": {
+      "target": "http://localhost:6000"
+    },
+    "/user/panel":{
+      "target": "http://localhost:6000"
+    },
+    "/user/add": {
+      "target": "http://localhost:6000"
+    },
+    "/user/checkEmail": {
+      "target": "http://localhost:6000"
+    },
+    "/contactBuyer/delete": {
+      "target": "http://localhost:6000"
+    },
+    "/contactBuyer/checkEmail": {
+      "target": "http://localhost:6000"
+    },
+    "/contactBuyer/notification": {
+      "target": "http://localhost:6000"
+    },
+    "/user/getUserData": {
+      "target": "http://localhost:6000"
+    },
+    "/user/logout": {
+      "target": "http://localhost:6000"
+    },
+    "/DonorProfile/setNewUserData": {
+      "target": "http://localhost:6000"
+    },
+    "/bloodRequired/data": {
+      "target": "http://localhost:6000"
+    },
+    "/contactBuyer": {
+      "target": "http://localhost:6000"
+    },
+    "/contactBuyer/panel": {
+      "target": "http://localhost:6000"
+    },
+    "/user/loginform": {
+      "target": "http://localhost:6000"
+    },
+    "/user/sellerAds": {
+      "target": "http://localhost:6000"
+    },
+    "/user/delFvt": {
+      "target": "http://localhost:6000"
+    },
+    "/user/getFvtAd": {
+      "target": "http://localhost:6000"
+    },
+    "/user/showMessage": {
+      "target": "http://localhost:6000"
+    },
+    "/user/dellAd": {
+      "target": "http://localhost:6000"
+    },
+    "/user/updatePassword": {
+      "target": "http://localhost:6000"
+    }
+  },
+  "scripts": {
+    "start": " react-scripts start && node server/app ",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

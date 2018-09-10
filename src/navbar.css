@@ -1,0 +1,178 @@
+.LogoImage {
+    width: 100px;
+    height:100px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    
+}
+.btn-custom-hollow {
+    background-color: transparent;
+    color: #2965be;
+    border: 1px solid #ddd;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn-custom-orange {
+    background-color: #f70;
+    color: #fff;
+}
+.btn {
+    display: inline-block;
+    margin: .5rem;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    
+    
+}
+.header{
+    
+    Background-color: #e7e7e7;
+    
+    
+}
+/* #searchArea{
+    text-transform: capitalize;
+} */
+
+
+.navbar-brand { 
+    position: relative; z-index: 2; 
+     Background-color: #e7e7e7;
+ }
+ .navbar-nav.navbar-right{
+     margin-top: 2%
+ }
+.navbar-nav.navbar-right .btn { 
+    position: relative;
+    color:red;
+     z-index: 2; 
+     padding: 4px 20px;
+      margin: 10px auto;
+      
+     }
+
+.navbar .navbar-collapse {
+     position: relative;
+     }
+.navbar .navbar-collapse .navbar-right > li:last-child { 
+    padding-left: 22px;
+ }
+
+.navbar .nav-collapse { position: absolute;
+     z-index: 1;
+      top: 0; left: 0; 
+      right: 0; 
+      bottom: 0;
+       margin: 0;
+        padding-right: 120px;
+         padding-left: 80px; 
+         width: 100%;
+         }
+.navbar.navbar-default .nav-collapse {
+     background-color: black;
+     
+     width: 81%;
+     margin-left: 96px
+
+     
+     }
+
+/* .navbar .nav-collapse .navbar-form { 
+    border-width: 0;
+      
+     } */
+.nav-collapse>li {
+     float: right; 
+    }
+
+.btn.btn-circle { 
+    border-radius: 10px;
+ }
+.btn.btn-outline {
+     background-color: red; 
+    }
+    .btnIconDesign{
+        margin-left: 2px;
+        margin-top: 2%
+    }
+    .selectDesign {
+        margin-right: 20px;
+    }
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child {
+         padding-left: 15px;
+          padding-right: 15px; 
+        } 
+    
+    .navbar .nav-collapse { 
+        margin: 8px auto;
+         padding: 0; 
+        }
+    .navbar .nav-collapse .navbar-form {
+         margin: 0; 
+        }
+    .nav-collapse>li { 
+        float: none; 
+    }
+}
+
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

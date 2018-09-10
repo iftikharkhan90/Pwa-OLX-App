@@ -1,0 +1,28 @@
+ .single-listing-item-price {
+    width: 100%;
+    height:70px;
+    background-color: #ffee7e;
+    padding: 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.single-listing-item-price .item-price {
+    font-size: 25px;
+    margin: auto;
+    padding-left: 5px;
+}
+.left-triangle {
+    margin-top: 20px;
+    margin-right: -15px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 30px solid #ffee7e;
+    border-bottom: 35px solid transparent;
+}
+.textChange{
+    font-size: 20px;
+    margin-left: 52px;
+    
+}

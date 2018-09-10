@@ -1,0 +1,33 @@
+.adTitle{
+    border-top: 0px solid !important;
+    border-right: 0px solid !important;
+    border-left: 0px solid !important;
+    height: 50px !important;
+    border-radius: 0% !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+   
+    /* border-bottom: 21px; */
+    border-bottom-color: Black !important;
+}
+.adTitle:focus{
+    padding: 5% !important;
+    border-bottom-color: brown !important;
+}
+
+.formBody2{
+  margin-top: 137px
+}
+.addForm{
+    margin-top: 10px;
+}
+
+/* .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 3%
+  }
+  .paddings:focus{
+      padding: 5%
+  } */

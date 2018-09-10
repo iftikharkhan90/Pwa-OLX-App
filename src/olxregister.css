@@ -1,0 +1,90 @@
+.inputName{
+    text-transform: capitalize;
+}
+.rowStyle{
+   margin-top: 10%
+}
+.registerBodystyle{
+    margin-top: 10%;
+    
+  
+    
+}
+ /* .registerBody{
+   
+    
+
+    
+}  */
+.formRegister{
+    background-color: #eaedf1;
+    
+}
+.formHeading {
+    margin-left: -9px;
+     
+
+    width: 102%;
+    background-color:#FE3C47;
+}
+.formHeading h3{
+    background-color:#FE3C47;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+    position: relative;
+    padding: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    margin: 0 -5px 50px; 
+    
+}
+.labelValues {
+    font-family: sans-serif;
+    font-style: inherit;
+    font-weight: 1000
+}
+/* .inputStyle {
+    border-radius: 10px
+} */
+.location h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+
+}
+.btn-info {
+     float: right;
+     width: 130px;
+     height :40px;
+}
+.googleMap{
+    border-top: 1px solid red;
+    height: 250px;
+}
+
+/* .form-radio{
+
+    width:50px !important;
+    
+    height:50px!important;
+    margin-top: 5%;
+    
+    } */
+    input[type=radio] { 
+        transform: scale(3); 
+        -moz-transform: scale(3); 
+        -ms-transform: scale(3); 
+        -webkit-transform: scale(3); 
+        -o-transform: scale(3); 
+        margin-right: 5%;
+        }
+
+
+
+
+
+        

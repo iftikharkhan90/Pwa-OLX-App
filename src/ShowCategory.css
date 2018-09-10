@@ -1,0 +1,11 @@
+.faStyle {
+    display: inline-block;
+    font: 58px/1 FontAwesome !important;
+    /* font-size: inherit; */
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.valid{
+    color: red;
+}

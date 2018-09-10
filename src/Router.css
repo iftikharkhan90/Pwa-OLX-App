@@ -1,0 +1,17 @@
+.liList {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 5%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    
+}
+ .textdesign{
+        color: black;
+        
+    }
+    .textdesign :hover{
+        color:royalblue;
+        font-weight: 1000
+    }
