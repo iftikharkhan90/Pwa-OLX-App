@@ -54,18 +54,18 @@ error = () => {
 
 }
 
-componentWillMount(){
+componentDidMount(){
 console.log(this.props.match.params.category)
     let category = this.props.match.params.category
-    
-    axios.post('/user/getUserData', {category: category} ) .then((response) => {
+    console.log("iftikhar",category);
+    axios.get('/user/getUserData?category='+ category ) .then((response) => {
         console.log(response.data);
       
         
         if (response.data) {
         //   localStorage.setItem("donorInfo",   JSON.stringify({user:response.data}));
         this.setState({Adds:response.data});
-            console.log(response.data);
+            console.log("iftikhar",response.data);
       
             
         }

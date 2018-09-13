@@ -1,5 +1,9 @@
 var mongoose = require('mongoose');
-var AddpostSchema = mongoose.Schema({
+var AddpostSchema = mongoose.Schema(
+    // {
+    //     timestamps: true,
+    // },  
+    {
     adTitle: String,
     
     itemCondition:String,
@@ -12,9 +16,7 @@ var AddpostSchema = mongoose.Schema({
     sellerEmail:String,
     user:String,
 },
-{
-    timestamp: true
-}
+
 );
 
 var feedBackModels = mongoose.model('PsotDetail', AddpostSchema)

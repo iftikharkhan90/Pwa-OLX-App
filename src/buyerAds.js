@@ -70,13 +70,14 @@ class SellerAds extends Component {
             if (response.data) {
 
                 
-                
+               
             
                 var newList= this.state. displayAds.filter(function (ad) {
                     return ad._id != obj
                 })
+
                 this.setState({displayAds:newList})
-                this.dellSuccess();
+                 this.dellSuccess();
             }
         }).catch(function (err) {
             console.log(err);
@@ -106,7 +107,7 @@ class SellerAds extends Component {
             email
         }
         console.log(sellerEmail);
-        axios.post('/user/sellerAds', sellerEmail).then((response) => {
+        axios.get('/user/sellerAds?sellerEmail='+ email).then((response) => {
             // console.log(response.data);
 
 

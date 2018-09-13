@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbarr from './navbar.js';
-import Slider from './Slider.js';
+
 import animal from './images/cat.png'
 import Toys from './images/doll.png'
 import Clothes from './images/fashion.png'
@@ -31,7 +31,7 @@ class Home extends Component {
 
 
   componentDidMount = () => {
-    axios.post('/user/panel', "202").then((response) => {
+    axios.get('/user/panel', "202").then((response) => {
 
       console.log(response.data);
 

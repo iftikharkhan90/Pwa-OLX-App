@@ -36,7 +36,7 @@ class ViewMessage extends Component {
   }
 
   success = () => {
-    toast.success("Ad Posted Successfully!", {
+    toast.success("Message has been sent to Seller!", {
       position: toast.POSITION.TOP_CENTER,
       autoClose: 2000
     });

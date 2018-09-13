@@ -88,7 +88,7 @@ class FavouriteAds extends Component {
 
 
             if (response.data) {
-                console.log(response.data);
+                console.log("get fvrt data",response.data);
 
                 this.setState({ FvtAds: response.data });
 

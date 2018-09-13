@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import { Button, Jumbotron, FormGroup, Navbar, NavbarCollapse, NavbarHeader, FormControl, ControlLabel, Formcounter } from 'react-bootstrap';
 import './Router.css';
-import Slider from './Slider';
+
 import PrivateRoute from './privateRoute.js';
 
 import Home from './Home.js';

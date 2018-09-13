@@ -77,5 +77,5 @@ app.use((error, req, res, next) => {
 
 
 
-const port = 6000;
+const port = 3434;
 app.listen(port, () => console.log('App listening on port ' + port));

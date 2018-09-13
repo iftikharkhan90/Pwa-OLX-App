@@ -27,6 +27,8 @@
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
     "react": "^16.3.2",
+    "react-app-rewire-workbox": "^2.0.1",
+    "react-app-rewired": "^1.6.2",
     "react-bootstrap": "^0.32.1",
     "react-bootstrap-modal": "^4.1.1",
     "react-dom": "^16.3.2",
@@ -37,74 +39,80 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "react-toastify": "^4.2.3"
+    "react-toastify": "^4.2.3",
+    "workbox-webpack-plugin": "^3.5.0"
   },
   "proxy": {
     "/user/registerForm": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
-    "/user/panel":{
-      "target": "http://localhost:6000"
+    "/user/panel": {
+      "target": "http://localhost:3434"
     },
     "/user/add": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/checkEmail": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/contactBuyer/delete": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/contactBuyer/checkEmail": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/contactBuyer/notification": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/getUserData": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/logout": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/DonorProfile/setNewUserData": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/bloodRequired/data": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/contactBuyer": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/contactBuyer/panel": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/loginform": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/sellerAds": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/delFvt": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/getFvtAd": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/showMessage": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/dellAd": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     },
     "/user/updatePassword": {
-      "target": "http://localhost:6000"
+      "target": "http://localhost:3434"
     }
   },
   "scripts": {
     "start": " react-scripts start && node server/app ",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-scripts --env=jsdom",
+    "eject": "react-scripts eject",
+    
+    "workbox": "workbox generateSW workbox-config.js"
+  }, 
+  "devDependencies": {
+    "workbox-cli": "^3.4.1"
   }
 }

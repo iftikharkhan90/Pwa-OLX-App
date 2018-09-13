@@ -48,10 +48,10 @@ router.post('/loginform', passport.authenticate('local'), (req, res) => {
 // get userData
 
 
-router.post('/getUserData', (req, res) => {
+router.get('/getUserData', (req, res) => {
 
-
-    PostSchema.find({ catogary: req.body.category }, (err, data) => {
+console.log(req.query);
+    PostSchema.find({ catogary: req.query.category }, (err, data) => {
         if (data) {
             res.json(data);
         } else {
@@ -88,7 +88,7 @@ router.post('/add', (req, res) => {
 });
 
 //get data
-router.post('/panel', function (req, res) {
+router.get('/panel', function (req, res) {
     PostSchema.find({}, (err, data) => {
         if (data) {
             res.json(data);
@@ -99,9 +99,9 @@ router.post('/panel', function (req, res) {
     // get Seller Ads
 
 
-    router.post('/sellerAds', function (req, res) {
+    router.get('/sellerAds', function (req, res) {
         
-        PostSchema.find({ sellerEmail: req.body.email }, (err, data) => {
+        PostSchema.find({ sellerEmail: req.query.sellerEmail }, (err, data) => {
             if (data) {
                 res.json(data);
             }

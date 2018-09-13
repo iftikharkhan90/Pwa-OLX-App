@@ -32,7 +32,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React</title>
+  <title>OlX-Pakistan</title>
 </head>
 
 <body>
@@ -76,6 +76,17 @@
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js')
+      .then(function (registration) {
+        console.log('Service worker registered ' + registration.scope);
+      })
+      .catch((err) => {
+        console.log('service worker failed' + err)
+      })
+  }
+</script>
+<!-- <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./build/service-worker.js')
       .then((registration) => {
         console.log('service registered', registration.scope)
       })
@@ -83,4 +94,13 @@
         console.log('not registered', err)
       })
   }
-</script>
+ </script> -->
+<!-- <script>
+  // Check that service workers are registered
+  if ('serviceWorker' in navigator) {
+    // Use the window load event to keep the page load performant
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./service-worker.js');
+    });
+  }
+  </script> -->
